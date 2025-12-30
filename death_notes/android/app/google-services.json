@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "677889739488",
+    "project_id": "death-notes-786",
+    "storage_bucket": "death-notes-786.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677889739488:android:d1cf967e1a4ce6a2ea1e85",
+        "android_client_info": {
+          "package_name": "com.example.death_notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwpgTK3atRqmXq-64fPt_lvfDoHteNn5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
