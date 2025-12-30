@@ -58,6 +58,21 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     final authProvider = context.watch<AuthProvider>();
     final isLoading = authProvider.isLoading;
+    final error = authProvider.error;
+
+    // Show error snackbar when error occurs
+    if (error != null && error.isNotEmpty) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(error),
+            backgroundColor: Colors.red,
+            duration: Duration(seconds: 6),
+          ),
+        );
+        authProvider.clearError();
+      });
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text('Register')),

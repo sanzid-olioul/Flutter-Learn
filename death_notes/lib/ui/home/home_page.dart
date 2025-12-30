@@ -12,7 +12,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal,
-        title: Text('Death Notes', style: TextStyle(color: Colors.white)),
+        title: Text(
+          'Death Notes',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
+        ),
+        centerTitle: false,
         elevation: 0,
         actions: [
           IconButton(
